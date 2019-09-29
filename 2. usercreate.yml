@@ -1,0 +1,9 @@
+---
+- name: Ansible user create simple script.
+  hosts: all
+  remote_user: Devops
+  become: true
+  tasks:
+  - name: Create a user.
+    user: name=parveen123 state=present
+...
