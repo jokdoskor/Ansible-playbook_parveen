@@ -1,0 +1,9 @@
+---
+- name: Service Restart and Enable.
+  hosts: all
+  remote_user: Devops
+  become: true
+  tasks:
+  - name: Service restart and enable
+    service: name=httpd state=restarted enabled=yes
+...
