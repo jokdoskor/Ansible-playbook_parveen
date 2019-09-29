@@ -1,0 +1,9 @@
+---
+- name: Ansible insert line into a file.
+  hosts: all
+  remote_user: Devops
+  become: true
+  tasks:
+  - name: insert line in file.
+    lineinfile: path=file1 line=This line is inserted. create=yes
+...
